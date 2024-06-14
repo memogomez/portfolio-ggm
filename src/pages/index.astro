@@ -1,11 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 ---
 
-<Layout title="Portfolio memo.">
-	<main>
-		
-	</main>
+<Layout
+  title="portfolio memo"
+  description="Contrata a memo para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
+>
+  <Header />
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Card />
+    </SectionContainer>
+  </main>
+
+  <style></style>
 </Layout>
-<style>
-</style>
